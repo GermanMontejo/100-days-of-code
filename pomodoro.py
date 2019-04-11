@@ -1,7 +1,7 @@
 import time
 from datetime import datetime, timedelta
 
-def sleep():
+def pomodoro_timer():
     pomodoro_tracker = 0
 
     # flip is going to be used to switch the end time to 25 mins or 5 mins
@@ -38,7 +38,7 @@ def sleep():
         time.sleep(1)
 
 try:
-    sleep()
+    pomodoro_timer()
 except KeyboardInterrupt:
     print('Exiting program...')
     exit()
